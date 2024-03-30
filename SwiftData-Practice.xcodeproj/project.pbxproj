@@ -13,6 +13,7 @@
 		471E47532BB5419A008B0AE7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 471E47522BB5419A008B0AE7 /* Preview Assets.xcassets */; };
 		471E475A2BB542CB008B0AE7 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471E47592BB542CB008B0AE7 /* Book.swift */; };
 		471E475C2BB54857008B0AE7 /* NewBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471E475B2BB54857008B0AE7 /* NewBookView.swift */; };
+		471E475E2BB859CE008B0AE7 /* EditBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471E475D2BB859CE008B0AE7 /* EditBookView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		471E47522BB5419A008B0AE7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		471E47592BB542CB008B0AE7 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		471E475B2BB54857008B0AE7 /* NewBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBookView.swift; sourceTree = "<group>"; };
+		471E475D2BB859CE008B0AE7 /* EditBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditBookView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				471E474F2BB5419A008B0AE7 /* Assets.xcassets */,
 				471E47512BB5419A008B0AE7 /* Preview Content */,
 				471E475B2BB54857008B0AE7 /* NewBookView.swift */,
+				471E475D2BB859CE008B0AE7 /* EditBookView.swift */,
 			);
 			path = "SwiftData-Practice";
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				471E475C2BB54857008B0AE7 /* NewBookView.swift in Sources */,
+				471E475E2BB859CE008B0AE7 /* EditBookView.swift in Sources */,
 				471E474E2BB54195008B0AE7 /* ContentView.swift in Sources */,
 				471E474C2BB54195008B0AE7 /* SwiftData_PracticeApp.swift in Sources */,
 				471E475A2BB542CB008B0AE7 /* Book.swift in Sources */,
