@@ -10,6 +10,7 @@ import SwiftUI
 struct EditBookView: View {
     @Environment(\.dismiss) private var dismiss
     let book: Book
+    // ユーザーが編集できる本の属性を保持するための状態変数
     @State private var status = Status.onShelf
     @State private var rating: Int?
     @State private var title = ""
@@ -22,6 +23,7 @@ struct EditBookView: View {
     
     var body: some View {
         HStack{
+            // ユーザーが異なるステータスを選択できるようにするため
             Text("Status")
             Picker("Status",selection: $status){
                 ForEach(Status.allCases){ status in
@@ -103,6 +105,7 @@ struct EditBookView: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar{
             if changed{
+                // ユーザーがこのボタンをクリックすると、編集された本の情報が保存
                 Button("Update"){
                     book.status = status
                     book.rating = rating
@@ -117,6 +120,7 @@ struct EditBookView: View {
                 .buttonStyle(.borderedProminent)
             }
         }
+        // ビューが表示される際に初期値を設定する
         .onAppear{
             status = book.status
             rating = book.rating
@@ -128,6 +132,7 @@ struct EditBookView: View {
             dateCompleted = book.dateCompleted
         }
     }
+    // 編集前後で情報に変更があるかどうかをチェック
     var changed: Bool {
         status != book.status
         || rating != book.rating

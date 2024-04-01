@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct NewBookView: View {
+    // SwiftDataで使用されるデータベースコンテキストを参照します。
     @Environment(\.modelContext) private var context
+    // 現在表示されているビューを閉じるために使用
     @Environment(\.dismiss) var dismiss
     @State private var title = ""
     @State private var author = ""
@@ -19,6 +21,7 @@ struct NewBookView: View {
                 TextField("Autohr",text: $author)
                 Button("Create"){
                     let newBook = Book(title: title, author: author)
+                    // データベースに保存
                     context.insert(newBook)
                     dismiss()
                 }

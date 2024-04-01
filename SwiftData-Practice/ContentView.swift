@@ -9,7 +9,9 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
+    // SwiftUIの環境からモデルのコンテキストを取得
     @Environment(\.modelContext) private var context
+    // データベースからBookオブジェクトをタイトルでソートして取得
     @Query (sort: \Book.title) private var books: [Book]
     @State private var createNewBook = false
     var body: some View {
@@ -22,6 +24,7 @@ struct ContentView: View {
                     List{
                         ForEach(books){ book in
                             NavigationLink{
+                                // タイトルと紐付けしてとる？？
                                 EditBookView(book:book)
                             } label: {
                                 HStack(spacing: 10){
