@@ -22,7 +22,7 @@ struct ContentView: View {
                     List{
                         ForEach(books){ book in
                             NavigationLink{
-                                Text(book.title)
+                                EditBookView(book:book)
                             } label: {
                                 HStack(spacing: 10){
                                     book.icon
